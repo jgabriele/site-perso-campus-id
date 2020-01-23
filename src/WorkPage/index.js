@@ -19,6 +19,7 @@ export default function WorkPage() {
     if (currentProject.name.toLowerCase().includes(inputValue.toLowerCase())) {  
       projectComponents.push(
         <Project
+          key={currentProject.name}
           name={currentProject.name}
           technologies={currentProject.technologies}
           description={currentProject.description}
